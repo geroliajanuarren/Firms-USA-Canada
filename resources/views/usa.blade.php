@@ -1,3 +1,5 @@
+@extends('welcome')
+
 <!DOCTYPE html>
 
 
@@ -5,18 +7,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firms</title>
+    <title>USA</title>
     
     <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  
 
-    <!-- Navigation Bar -->
+    @section('content')
+
     <nav class="navbar navbar-expand-lg navbar-light w-auto mx-auto bg-light border border-1">
         <div class="container position-relative">
-            <a class="navbar-brand fs-3 fw-bold" href="">Legal & Accounting Directory</a>
+            <a class="navbar-brand fs-3 fw-bold" href="{{ route('home') }}">Legal & Accounting Directory</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,8 +26,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="ms-auto">
                     <!-- USA & Canada Button -->
-                    <a href="{{ route('usa') }}" class="btn btn-dark ms-3 text-light">USA</a>
-                    <a href="{{ route('canada') }}" class="btn btn-dark ms-3 text-light">Canada</a>
+                    <a href="#" class="btn btn-dark ms-3 text-light">USA</a>
+                    <a href="#" class="btn btn-dark ms-3 text-light">Canada</a>
                 </div>
             </div>
         </div>
@@ -193,3 +195,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+@endsection
